@@ -1,22 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.IO;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Http;
 using Amazon.Runtime;
 using Amazon.S3;
+using System.IO;
 using Amazon.S3.Transfer;
 using Bold_Meeting_Recordings.Helpers;
 using Amazon.S3.Model;
 using Bold_Meeting_Recordings.Models;
-using Microsoft.AspNetCore.Authorization;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace Bold_Meeting_Recordings.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         private readonly AppSettings _appSettings;
@@ -266,12 +264,6 @@ namespace Bold_Meeting_Recordings.Controllers
             }
 
             return Json(new { Result = true });
-        }
-
-        public async Task<IActionResult> Logout()
-        {
-            var result = SignOut("AzureAD", "AzureADOpenID", "AzureADCookie");
-            return result;
         }
     }
 }

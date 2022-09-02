@@ -1,23 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "D:\\meeting-share\\redirect_uri_fix\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj": {}
+    "C:\\Users\\SivanesanSaravanan\\Downloads\\meeting-recording-main(1)\\meeting-recording-main\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj": {}
   },
   "projects": {
-    "D:\\meeting-share\\redirect_uri_fix\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj": {
+    "C:\\Users\\SivanesanSaravanan\\Downloads\\meeting-recording-main(1)\\meeting-recording-main\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\meeting-share\\redirect_uri_fix\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj",
+        "projectUniqueName": "C:\\Users\\SivanesanSaravanan\\Downloads\\meeting-recording-main(1)\\meeting-recording-main\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj",
         "projectName": "Bold_Meeting_Recordings",
-        "projectPath": "D:\\meeting-share\\redirect_uri_fix\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj",
+        "projectPath": "C:\\Users\\SivanesanSaravanan\\Downloads\\meeting-recording-main(1)\\meeting-recording-main\\Bold_Meeting_Recordings\\Bold_Meeting_Recordings.csproj",
         "packagesPath": "C:\\Users\\SivanesanSaravanan\\.nuget\\packages\\",
-        "outputPath": "D:\\meeting-share\\redirect_uri_fix\\Bold_Meeting_Recordings\\obj\\",
+        "outputPath": "C:\\Users\\SivanesanSaravanan\\Downloads\\meeting-recording-main(1)\\meeting-recording-main\\Bold_Meeting_Recordings\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "D:\\meeting-share\\redirect_uri_fix\\Bold_Meeting_Recordings\\NuGet.Config",
           "C:\\Users\\SivanesanSaravanan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -26,6 +25,8 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nexus.syncfusion.com/repository/boldbi-development/,https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,10 +48,6 @@
             "AWSSDK.S3": {
               "target": "Package",
               "version": "[3.7.0.21, )"
-            },
-            "Microsoft.AspNetCore.Authentication.AzureAD.UI": {
-              "target": "Package",
-              "version": "[3.1.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
@@ -91,20 +88,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[3.1.12, 3.1.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[3.1.12, 3.1.12]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[3.1.12, 3.1.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -117,11 +100,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }
