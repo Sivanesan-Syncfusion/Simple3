@@ -3,6 +3,7 @@ os: windows
 files:
   - source: \
     destination: C:\SampleApplication
+    overwrite: true
 hooks:
   ApplicationStop:
     - location: .\RemoveApp.ps1
