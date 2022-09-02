@@ -1,0 +1,52 @@
+﻿@model FileUploadFormModel
+
+@{
+    ViewData["Title"] = "Upload";
+    var isPost = Context.Request.Method == "POST";
+}
+
+<link rel="stylesheet" href="~/css/bootstrap/bootstrap-select.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/bootstrap/bootstrap-theme.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/bootstrap/bootstrap.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/UploadForm.css" />
+<link rel="stylesheet" href="~/css/UploadAlert.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="~/js/bootstrap/bootstrap.min.js"></script>
+<script src="~/js/UploadForm.js" asp-append-version="true"></script>
+<script src="~/js/cute-alert.js" asp-append-version="true"></script>
+
+<form id="form" name="form" enctype="multipart/form-data" method="post">
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Key, new { @class = "col-md-2 control-label" })
+        <span class="fa fa-info-circle" data-toggle="tooltip" data-original-title="Please enter company or customer ID/name. It’s a category directory. Same customer or company recordings can be maintained in this directory."></span>
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Key, new { @class = "form-control key-text", @id = "key-space" })
+            @Html.ValidationMessageFor(m => m.Key, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.FormFile, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <input id="files" name="files" type="file" required />
+            @Html.ValidationMessageFor(m => m.FormFile, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-sm-1">
+            <button type="button" id="file-upload" class="btn btn-info" onclick="uploadFiles('files');" style="margin-left: 13px;" disabled>Upload</button>
+        </div>
+        <div class="col-sm-11 hide" id="upload-status" style="margin-top:6px;">
+        </div>
+    </div>
+</form>
+<br />
+<br />
+<div><p class="text-danger hide">@ViewBag.ErrorMessage</p></div>
+
+@await Html.PartialAsync("_PostUploadDialog")

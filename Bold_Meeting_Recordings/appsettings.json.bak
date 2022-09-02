@@ -1,0 +1,26 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "AwsSettings": {
+    "AccessKey": "AKIARWYFLOTLZ2ZHR6GL",
+    "SecretKey": "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",
+    "BucketName": "bold-meeting-recording",
+    "FolderName": "",
+    "AwsUser": "bold-meeting-recording.s3",
+    "AwsRegion": "us-east-2",
+    "AwsS3BaseUrl": "amazonaws.com"
+  },
+  "AzureAd": {
+    "Instance": "https://login.microsoftonline.com/",
+    "Domain": "[Enter the domain of your tenant, e.g. contoso.onmicrosoft.com]",
+    "ClientId": "Enter_the_Application_Id_here",
+    "TenantId": "common",
+    "CallbackPath": "/signin-oidc"
+  }
+}

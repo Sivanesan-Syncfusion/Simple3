@@ -1,0 +1,27 @@
+﻿<!-- Model trigger button hidden -->
+<button type="button" id="post-upload-btn" class="btn btn-primary hide" data-toggle="modal" data-target="#post-upload-dialog">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade text-break" id="post-upload-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-success alert-header">
+                <img src="~/js/img/success.svg" class="alert-img"/>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center">The file has been uploaded successfully</h3><br />
+                <div id="upload-data" style="margin-left: 24px;">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="upload-copy-link" data-toggle="tooltip" data-original-title="Click to copy" class="btn btn-primary">Copy Link</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

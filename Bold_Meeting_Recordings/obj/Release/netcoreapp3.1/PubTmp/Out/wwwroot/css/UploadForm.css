@@ -1,0 +1,56 @@
+﻿p {
+    margin-left: 15px;
+}
+
+.info-icon {
+    height: 18px;
+    width: 18px;
+}
+
+.key-text {
+    width: 500px;
+    margin-top: -20px;
+}
+
+.app-textbox-label {
+    color: #696969;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.form-input-field {
+    margin-top: 0;
+    font-size: 12px;
+    width: 500px;
+}
+
+.file-url {
+    padding: 10px;
+    border-radius: 2px;
+    width: 300px;
+    background-color: #EEEEEE;
+    border: none;
+}
+
+.copy-url {
+    padding: 10px;
+    background-color: #EEEEEE;
+    position: relative;
+    left: 3%;
+    border: none;
+}
+
+    .copy-url:hover {
+        background-color: #CCCCCC;
+        cursor: pointer;
+    }
+
+.alert-img {
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}

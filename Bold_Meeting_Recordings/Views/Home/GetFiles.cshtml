@@ -1,0 +1,29 @@
+﻿@model FileUploadFormModel
+
+@{
+    ViewData["Title"] = "Get Files";
+}
+
+<link rel="stylesheet" href="~/css/bootstrap/bootstrap-select.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/bootstrap/bootstrap-theme.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/bootstrap/bootstrap.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/UploadForm.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="~/js/bootstrap/bootstrap.min.js"></script>
+<script src="~/js/UploadForm.js" asp-append-version="true"></script>
+
+<form id="get-file-form" name="get-file-form" asp-controller="Home" asp-action="AllFiles" method="post">
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Key, new { @class = "col-md-2 control-label" })
+        <span class="fa fa-info-circle" data-toggle="tooltip" data-original-title="Please enter company or customer ID/name. It’s a category directory. Same customer or company recordings can be maintained in this directory."></span>
+        <div class="col-md-10">
+            <input class="form-control key-text" id="key-space" asp-for="Key" type="text" required/>
+            @Html.ValidationMessageFor(m => m.Key, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-info" id="get-file-btn" style="margin-left: 13px;">Get Files</button>
+</form>
