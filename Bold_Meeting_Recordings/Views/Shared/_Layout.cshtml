@@ -18,8 +18,8 @@
     </style>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" href="/">Syncfusion - Bold Meeting Recordings</a>
+            <div class="container" style="margin: 0px 0px 0px 370px">
+                <a class="navbar-brand" href="/">Syncfusion - Meeting Recordings</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,6 +35,12 @@
                     </ul>
                 </div>
             </div>
+            <div>
+                <span class="nav-link text-dark"><b>@User.Identity.Name</b></span>
+            </div>
+            <div>
+                <a class="logout" href="/Home/Logout" style="font-size: 16px; margin-right: 60px">Log out</a>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -46,8 +52,8 @@
     </div>
 
     <footer class="navbar-fixed-bottom">
-        <div class="container">
-            Copyright &copy; 2001 - 2021 - Syncfusion Inc. All Rights Reserved
+        <div class="container" style="text-align:center">
+            Copyright &copy; 2001 - @DateTime.UtcNow.Year  Syncfusion Inc. All Rights Reserved
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

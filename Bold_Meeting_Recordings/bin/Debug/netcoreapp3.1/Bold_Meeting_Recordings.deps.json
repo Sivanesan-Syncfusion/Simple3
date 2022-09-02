@@ -25,6 +25,7 @@
       "Bold_Meeting_Recordings/1.0.0": {
         "dependencies": {
           "AWSSDK.S3": "3.7.0.21",
+          "Microsoft.AspNetCore.Authentication.AzureAD.UI": "3.1.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.14",
           "Microsoft.Identity.Web": "1.15.2",
           "Microsoft.Identity.Web.UI": "1.15.2",
@@ -437,6 +438,26 @@
         },
         "compile": {
           "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.AzureAD.UI/3.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.8",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "3.1.8"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56601"
+          },
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56601"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll": {},
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.8": {
@@ -3767,6 +3788,13 @@
       "sha512": "sha512-SK4XTPEaXI5UTdtSkr8TN4ZKnvazNHhybnnkxHgOyRAhV9ObcIjbrNlhS4ZeR8XtI+HidL+v/WIIVfR1+jKB8Q==",
       "path": "azure.security.keyvault.secrets/4.1.0",
       "hashPath": "azure.security.keyvault.secrets.4.1.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.AzureAD.UI/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0TeOT2XWfNCouF0WPc5JtnqW3r2WN2NfUPg5W57Ica0NXwbw+KNLyWFcfwV9/hJdyOKscN/OD/zLGWtDAQ4KCQ==",
+      "path": "microsoft.aspnetcore.authentication.azuread.ui/3.1.0",
+      "hashPath": "microsoft.aspnetcore.authentication.azuread.ui.3.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.8": {
       "type": "package",

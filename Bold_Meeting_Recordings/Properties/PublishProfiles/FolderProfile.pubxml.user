@@ -5,6 +5,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\SivanesanSaravanan\Downloads\meeting-recording-main(1)\meeting-recording-main\Bold_Meeting_Recordings\../publish</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\meeting-share\redirect_uri_fix\Bold_Meeting_Recordings\../publish</_PublishTargetUrl>
   </PropertyGroup>
 </Project>
