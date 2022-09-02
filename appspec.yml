@@ -4,6 +4,7 @@ files:
   - source: \
     destination: C:\SampleApplication
     overwrite: true
+file_exists_behavior: OVERWRITE
 hooks:
   ApplicationStop:
     - location: .\RemoveApp.ps1
